@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="x-icon" href="icon2.png" >
+  <title> StudyShere - Your Online Guide</title>
+
+
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="hero">
+      <!-- navbar -->
+      <nav>
+        <div class="logo">
+          <img src="icon2.png" class="logo-pics">
+
+          <span class="white"
+            style="color: white; font-family: 'poppins','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">STUDY</span>
+          <span class="red"
+            style="color: red;font-family: 'poppins','Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">SPHERE</span>
+        </div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="start">
+          <a href="#">Get started</a>
+
+        </div>
+      </nav>
+      <!-- navbar end -->
+
+
+      <!-- home start -->
+      <div class="main">
+        <section id="home">
+          <h1>"Access educational <br>
+            resources instantly"</h1>
+          <span>StudySphere provides comprehensive notes, MCQs, and model <br> questions for all classes and subjects.
+            Start learning now!</span>
+          <div class="start strtsecnd">
+            <a href="#">Get started</a>
+          </div>
+        </section>
+      </div>
+      <!-- home end -->
+
+      <!-- about start -->
+      <section id="about">
+        <span class="frst">About Us</span>
+        <div class="wrap">
+          <span> Welcome to StudySphere, an educational site dedicated to providing comprehensive study materials for
+            students. <br><br>We offer a wide range of resources including notes, multiple-choice questions, and model
+            question papers. <br> <br>Our platform allows you to easily select your desired classes and subjects,
+            ensuring that you have access to the materials you need to excel in your studies. <br><br>
+
+            Whether you are preparing for exams or simply seeking additional learning resources, StudySphere is here to
+            support your educational journey. <br><br>Join us today and unlock the potential of your studies!
+            <div class="go">
+              <a href="">Start now</a>
+            </div>
+          </span>
+
+          <div class="img-sec">
+
+          </div>
+        </div>
+      </section>
+      <!-- about end  -->
+
+      <!-- serivces start  -->
+      <section id="services">
+        <span class="header">Our Services </span>
+        <div class="row1">
+          <div class="card">
+            <header>
+              Interactive Learning Materials
+            </header>
+            <span class="txt">
+              Access our extensive collection of notes, MCQs, and model questions for various classes and subjects for
+              an interactive learning experience.
+            </span>
+          </div>
+
+          <div class="card">
+            <header>
+              Customized Study Resources
+            </header>
+            <span class="txt">
+              Get tailored study resources that match your chosen classes and subjects, ensuring you have the right
+              materials for your educational needs.
+            </span>
+          </div>
+          <div class="card">
+            <header>
+              Exam Preparation Support
+            </header>
+            <span class="txt">
+              Prepare for exams with our comprehensive study materials and resources designed to help you excel in your
+              assessments.
+            </span>
+          </div>
+
+
+        </div>
+      </section>
+
+      <!-- serivces end  -->
+      <!-- contact us  -->
+      <section id="contact">
+        <div class="contact-contents">
+
+          <div class="contact-text">
+            <header>Contact Us Today! </header>
+            <p>Feel free to get in touch with us by filling out the contact form below. We are here to answer any
+              questions you may have and provide you with the best educational resources for your learning needs.</p>
+          </div>
+          <div class="contact-form">
+            <form action="#" method="post">
+              <div class="line1">
+                <div class="name">
+                  <p>Name</p>
+                  <input type="text" class="name-input">
+                </div>
+                <div class="email">
+                  <p>E-mail</p>
+                  <input type="email" class="email-input">
+                </div>
+              </div>
+              <div class="line2">
+                <p>Message</p>
+                <textarea class="textarea"></textarea>
+              </div>
+              <input type="button" class="button" value="Submit">
+
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- contact us end  -->
+
+    </div>
+
+  </div>
+  <script>
+    const ab = document.querySelector('nav');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY >= 56) {
+        ab.classList.add('nav-scrolled')
+      }
+      else {
+        ab.classList.remove('nav-scrolled')
+      }
+    });
+
+  </script>
+</body>
+
+</html>
