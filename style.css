@@ -1,0 +1,341 @@
+
+
+* {
+  scroll-behavior: smooth;
+  /* scroll-padding: em ; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+}
+.logo-pics{
+height: 70px;
+}
+
+body {
+  background-image: url('https://img.freepik.com/premium-photo/abstract-background-images-wallpaper-ai-generated_643360-44059.jpg?w=740');
+background-repeat: no-repeat;
+background-size: 100% 100%;
+height: 115vh;
+
+}
+.hero{
+  margin: 0;
+  padding: 0;
+  background-color: rgb(38, 8, 78);
+  opacity: 0.9;
+}
+/* navbar */
+nav{
+  display: flex;
+  flex-direction: row;
+ position: sticky;
+ top: 0;
+  height: 80px;
+  transition: all 0.5s;
+}
+nav ul,.start{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+
+}
+nav ul li a,.start{
+  text-decoration: none;
+  list-style: none;
+  margin: 0 30px;
+  color: rgb(206, 206, 206);
+}
+.nav-scrolled{
+  background-color: rgba(57, 17, 122, 0.878);
+  height: 60px;
+}
+ul{
+margin-left: 50px;
+font-weight: bold;
+
+}
+nav ul a:hover{
+  color:rgb(255, 255, 255);
+}
+
+li {
+list-style: none;
+}
+.logo{
+  letter-spacing: 2px;
+  font-size: 32px;
+  padding-left: 180px;
+  display: flex;
+  align-items: center;
+}
+.start{
+  margin-left: 150px;
+
+}
+.start a {
+  
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid rgb(116, 189, 231);
+  padding: 10px 20px;
+  border-radius: 6px;
+
+
+}
+.start a:hover{
+  background-color:  rgb(42, 96, 177);
+  transition: 0.5s;
+  cursor: pointer;
+}
+/* navbar end  */
+
+
+
+/* home start  */
+#home{
+  padding: 105px 0 140px 150px  ;
+  height: 650px;
+}
+#home h1{
+  font-family: poppins,sans-serif;
+  font-size: 52px;
+  color: white;
+}
+#home span{
+  font-family: Poppins,sans-serif;
+  color: rgb(206, 206, 206);
+  font-size: 20px;
+}
+.strtsecnd{
+  margin-left: -1055px;
+  margin-top: 20px;
+  padding: 0;
+}
+/* home end  */
+
+/* About start  */
+
+#about{
+  height: 850px;
+  padding: 105px 0 140px 100px  ;
+background-color: white;
+}
+#about .frst{
+  scale: .8; opacity: 0;
+  font-size: 32px;
+  font-family: Poppins,sans-serif;
+  animation: fadein linear ;
+  animation-timeline: view();
+margin-left: 200px;
+
+}
+/* fade in animation for about us  */
+@keyframes fadein {
+  
+  to{scale: 1; opacity: 1;}
+  
+}
+#about span{
+  color: black;
+  display: block;
+  width: 600px;
+  margin-top: 50px;
+  font-size: 18px;
+  font-family: Poppins;
+   
+}
+
+.wrap
+{
+  display: flex;
+  height: 600px;
+}
+.img-sec{
+  margin-left: 100px;
+  margin-top: 50px;
+  width: 500px;
+  background: url('https://cdn.dribbble.com/users/2065768/screenshots/4438259/media/0cd3091df76003c144f63cf217c15da4.gif');
+  background-size: cover;
+}
+.go a{
+  color: rgb(100, 100, 100);
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid rgb(116, 189, 231);
+  padding: 10px 20px;
+  border-radius: 6px;
+
+}
+.go a:hover{
+  background-color:  rgb(42, 96, 177);
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+  border: 2px solid rgb(116, 189, 231);
+
+
+}
+.go{
+  
+  margin-top: 20px;
+
+}
+
+/* about us end  */
+
+/* our services start  */
+#services{
+  height: 700px;
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+  padding: 0;
+}
+#services .header{
+  scale: .8; opacity: 0;
+  font-family: Poppins;
+  display: inline;
+  margin-left: 575px;
+  font-size: 32px;
+  animation: fadein linear ;
+  animation-timeline: view();
+}
+.row1{
+  display: flex;
+  margin: 100px;
+  width: 100%;
+  margin-left: 0px;
+  align-items: center;
+  justify-content: space-around;
+}
+.card{
+  width: 375px;
+  height: 500px;
+border-radius: 6px;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  
+  
+}
+.card:hover{
+  background-color: rgba(141, 110, 192, 0.878);
+  color: rgb(0, 0, 0);
+transition: 0.5s;
+cursor: pointer;
+
+
+}
+.card:hover header,.card:hover span{
+  color: black;
+  transition: 0.5s;
+  cursor: pointer;
+  letter-spacing: 0.8px;
+
+}
+.card header{
+  font-size: 32px;
+font-family: Poppins;
+margin-bottom: 100px;
+margin-top: -100px;
+color: rgb(0, 0, 0);
+letter-spacing: 0.8px;
+
+
+
+}
+.card .txt{
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  letter-spacing: 0.8px;
+
+}
+
+
+
+
+/* our services end  */
+
+
+/* contact start  */
+#contact{
+  background-color: white;
+  opacity: 0.95;
+  height: 400px;
+}
+.contact-contents{
+  padding: 60px;
+  display: flex;
+flex-direction: row;
+
+}
+.contact-text header{
+  font-family: Poppins;
+  font-size: 32px;
+  color: black;
+}
+.contact-text{
+  margin-top: 50px;
+  font-family: Poppins;
+  font-size: 18px;
+  color: rgb(29, 28, 28);
+  letter-spacing: 0.8px;
+width: 700px;
+ 
+}
+.contact-text p{
+  margin-top: 60px;
+}
+
+.line1{
+  
+  display: flex;
+  margin-top: 30px;
+}
+.name{
+  padding:  0 40px  0 0;
+}
+.name-input, .email-input{
+  border: none;
+  height: 40px;
+  width: 250px;
+  background-color: rgb(235, 235, 235);
+  border-radius: 8px;
+  outline: none;
+  padding: 8px;
+}
+.textarea{
+  resize: none;
+border: none;
+background-color: rgb(245, 242, 242);
+border-radius: 8px;
+padding: 10px;
+outline: none;
+  height: 200px;
+  width: 600px;
+}
+.button{
+  cursor: pointer;
+  width: 100px;
+  color: rgb(100, 100, 100);
+  text-decoration: none;
+  font-weight: bold;
+  border: 2px solid rgb(116, 189, 231);
+  border-radius: 6px;
+  height: 40px;
+}
+.button:hover{
+  background-color:  rgb(42, 96, 177);
+  color: white;
+  transition: 0.5s;
+  cursor: pointer;
+  border: 2px solid rgb(116, 189, 231);
+
+}
+/* contact end  */
+
